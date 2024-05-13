@@ -1,0 +1,22 @@
+post http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+"name":"Koko Hakof",
+"email":"Ofedr@Shelly.com",
+"password":"12345"
+}
+
+###
+post http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+"email":"Ofedr@Shelly.com",
+"password":"12345"
+}
+
+### 
+post http://localhost:3000/user/authUser
+Content-Type: application/json
+Cookie:access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InVzZXIiLCJpYXQiOjE3MDgyNDE1OTEsImV4cCI6MTcxMDgzMzU5MX0.VctD5VIY8wQJypirotFLoI-ZexpKasZooZN8q-U-dkE; Path=/; HttpOnly; Secure; SameSite=None
